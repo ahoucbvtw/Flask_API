@@ -72,6 +72,7 @@ def modifyOrderData():
 
 @api_page.route('/createdatabase', methods=['GET'])
 def CreateDatabase():
+    db.create_all()
 
     return "createdatabase"
 
